@@ -1,0 +1,94 @@
+body {
+    font-size: .95rem;
+}
+
+.auth-wrapper {
+    min-height: 100vh;
+    background: linear-gradient(135deg, #0d6efd 0%, #4b2fbf 100%);
+}
+
+.auth-card {
+    max-width: 440px;
+    width: 100%;
+    border: 0;
+    border-radius: 1rem;
+}
+
+.stat-card {
+    border: 0;
+    border-left: 4px solid var(--bs-primary);
+    transition: transform .15s ease;
+}
+
+.stat-card:hover {
+    transform: translateY(-2px);
+}
+
+.stat-card .stat-icon {
+    font-size: 2rem;
+    opacity: .25;
+}
+
+.card {
+    border-radius: .75rem;
+}
+
+.table > :not(caption) > * > * {
+    vertical-align: middle;
+}
+
+.notif-menu {
+    width: 320px;
+    max-height: 400px;
+    overflow-y: auto;
+}
+
+.timeline {
+    border-left: 2px solid var(--bs-border-color);
+    margin-left: .5rem;
+    padding-left: 1.25rem;
+}
+
+.timeline-item {
+    position: relative;
+    margin-bottom: 1.25rem;
+}
+
+.timeline-item::before {
+    content: "";
+    position: absolute;
+    left: -1.65rem;
+    top: .3rem;
+    width: .75rem;
+    height: .75rem;
+    border-radius: 50%;
+    background: var(--bs-primary);
+    border: 2px solid #fff;
+}
+
+.workflow-steps {
+    display: flex;
+    flex-wrap: wrap;
+    gap: .5rem;
+}
+
+.workflow-steps .step {
+    flex: 1 1 120px;
+    text-align: center;
+    padding: .5rem;
+    border-radius: .5rem;
+    background: var(--bs-light);
+    color: var(--bs-secondary);
+    font-size: .8rem;
+}
+
+.workflow-steps .step.done {
+    background: var(--bs-success-bg-subtle);
+    color: var(--bs-success-text-emphasis);
+}
+
+.workflow-steps .step.current {
+    background: var(--bs-primary);
+    color: #fff;
+    font-weight: 600;
+}
